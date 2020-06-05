@@ -7,14 +7,14 @@ calc = True
 #function to get number one
 def x ():
     while True:
-        x = input ("x is? Leave empty if not relevant")
+        x = input ("x is? Leave empty if not relevant   ")
         if x == "":
             break
         else:
             try:
-                x = int(x)
+                x = float(x)
             except:
-                print ("Not a number!")
+                print ("Not a number!   ")
             else:
                 return x
                 break
@@ -22,14 +22,14 @@ def x ():
 #function to get numbertwo
 def y ():
     while True:
-        y = input ("Y is? Leave empty if not relevant")
+        y = input ("Y is? Leave empty if not relevant.   ")
         if y == "":
             break
         else:
             try:
-                y = int(y)
+                y = float(y)
             except:
-                print ("Not a number!")
+                print ("Not a number!   ")
             else:
                 return y
                 break
@@ -37,11 +37,11 @@ def y ():
 #function to get operator
 def operator ():            
     while True:
-        operator = input ("+ for x+y,- for x-y,* for x*y,/ for x/y,/2 for square root,\n1/ for 1/x,*2 for x*x,% for x/100,*3 for x*x*x,/3 for cubic_root,\n** for power,// for root,10* for 10 power x,2* for 2 power x,p for pi,\n| for absolute,! for factorial,10 for logx10,le for logex,l for logxy,\ne for e,e* for e power x,m for mod,s for sinus x,c for cosinus x,\nt for tangens x,r for rds to dgr,d for dgr to rds\n")
+        operator = input ("+ for x+y,- for x-y,* for x*y,\n/ for x/y,/2 for square root,1/ for 1/x,\n*2 for x*x,% for x/100,*3 for x*x*x,\n/3 for cubic_root,** for power,// for root,\n10* for 10 power x,2* for 2 power x,p for pi,\n| for absolute,! for factorial,10 for logx10,\nle for logex,l for logxy,e for e,e* for e power x,\nm for mod,s for sinus x,c for cosinus x,\nt for tangens x,r for rds to dgr,d for dgr to rds\n")
         if operator [0] in ("+","-","*","/","/2","1/","*2","%","*3","/3","**","//","10*","2*","p","|","!","10","le","l","e","e*","m","s","c","t","r","d"):
             return operator
         else:
-            print ("Wrong operator!")
+            print ("Wrong operator!   ")
         
 #continueance function
 def reply_if_continue ():
