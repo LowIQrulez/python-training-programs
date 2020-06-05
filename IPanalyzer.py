@@ -41,5 +41,15 @@ def ipanalyzer ():
     print ("IP is: " + ipstr + "\n"
            "Registered in: " + countrystr + "\n"
            "Provided by: " + spstr)
-    
-ipanalyzer ()
+
+while True:      
+    ipanalyzer ()
+
+    reply = input ("Again? Y/N")
+    if reply.lower () [0] == "y":
+        continue
+    else:
+        break
+
+
+

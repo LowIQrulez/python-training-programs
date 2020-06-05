@@ -20,7 +20,7 @@ def display_board(board):
 def player_input():
     marker = ""
     while marker != "X" and marker != "O":
-        marker = input ("Player 1, choose your marker X/O!").upper ()
+        marker = input ("Player 1, choose your marker X/O!").upper () [0]
     player1 = marker
     if player1 == "X":
         player2 = "O"
@@ -94,7 +94,7 @@ def player_choice(board):
 #Function asking a players if to continue with another game.
 
 def replay():
-    if input ("Play again? Y/N.") == "Y":
+    if input ("Play again? Y/N.").upper () [0] == "Y":
         return True
     else:
         return False
@@ -113,7 +113,7 @@ while True:
     print (f"{turn} starts!")
 
     game = input (f"{turn} Can we start? Y/N")
-    if game == "Y":
+    if game.upper () [0] == "Y":
         game_on = True
     else:
         game_on = False
